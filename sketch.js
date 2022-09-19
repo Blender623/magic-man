@@ -4,8 +4,9 @@ function preload() {
 }
 function setup(){
   createCanvas(400,400)
-  song.play()
+ 
   amp = new p5.Amplitude()
+   getAudioContext().resume();
 }
 function mousePressed() {
   if (song.isPlaying()) {
