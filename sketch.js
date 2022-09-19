@@ -7,6 +7,16 @@ function setup(){
   song.play()
   amp = new p5.Amplitude()
 }
+function mousePressed() {
+  if (song.isPlaying()) {
+    // .isPlaying() returns a boolean
+    song.stop();
+    background(255, 0, 0);
+  } else {
+    song.play();
+    background(0, 255, 0);
+  }
+}
 function draw(){
   background(255)
  level= amp.getLevel()
