@@ -1,6 +1,7 @@
 let song,amp,level
 function preload() {
-  song =loadSound('https://cdn.pixabay.com/audio/2022/08/20/audio_55aa207a92.mp3');
+ // song =loadSound('https://cdn.pixabay.com/audio/2022/08/20/audio_55aa207a92.mp3');
+ song= loadSound('https://cdn.pixabay.com/download/audio/2023/01/28/audio_a153587dd5.mp3');//filename=phonk-136933.mp3
 }
 function setup(){
   createCanvas(400,400)
@@ -26,6 +27,7 @@ function draw(){
   strokeWeight(10)
   arc(0,0,200,200,0,value/30)
   rotate(PI)
+  fill(level);
   line(100,100,value,value)
    arc(0,0,100,100,0,value/30)
   rotate(PI/2)
