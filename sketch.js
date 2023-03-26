@@ -4,7 +4,7 @@ function preload() {
  song= loadSound('https://cdn.pixabay.com/download/audio/2023/01/28/audio_a153587dd5.mp3');//filename=phonk-136933.mp3
 }
 function setup(){
-  createCanvas(400,400)
+  createCanvas(window.screen.width,window.screen.height)
  
   amp = new p5.Amplitude()
    getAudioContext().resume();
@@ -25,9 +25,9 @@ function draw(){
   value= map(level,0,1,0,360);
   translate(width/2,height/2);
   strokeWeight(10)
-  arc(0,0,200,200,0,value/30)
+  arc(0,0,window.width/2,window.width/2,0,value/30)
   rotate(PI)
-  fill(level);
+  //fill(level);
   line(100,100,value,value)
    arc(0,0,100,100,0,value/30)
   rotate(PI/2)
