@@ -5,7 +5,7 @@ function preload() {
  song= loadSound('https://assets.editor.p5js.org/62316d91ad2f6600243abedc/eb36f330-0bc7-4a84-9315-8a792028fced.mp3');
 }
 function setup(){
-  createCanvas(window.screen.width,window.screen.height)
+  createCanvas(window.inner.width,window.inner.height)
  
   amp = new p5.Amplitude()
    getAudioContext().resume();
