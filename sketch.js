@@ -1,8 +1,8 @@
 let song,amp,level
 function preload() {
- // song =loadSound('https://cdn.pixabay.com/audio/2022/08/20/audio_55aa207a92.mp3');
+  song =loadSound('https://cdn.pixabay.com/audio/2022/08/20/audio_55aa207a92.mp3');
 // song= loadSound('https://cdn.pixabay.com/download/audio/2023/01/28/audio_a153587dd5.mp3');//filename=phonk-136933.mp3
- song= loadSound('https://assets.editor.p5js.org/62316d91ad2f6600243abedc/eb36f330-0bc7-4a84-9315-8a792028fced.mp3');
+ //song= loadSound('https://assets.editor.p5js.org/62316d91ad2f6600243abedc/eb36f330-0bc7-4a84-9315-8a792028fced.mp3');
 }
 function setup(){
   createCanvas(window.inner.width,window.inner.height)
